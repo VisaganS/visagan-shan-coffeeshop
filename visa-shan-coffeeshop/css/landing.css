@@ -41,20 +41,25 @@
 .button-border{
     position:absolute;
     border: 2px solid black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:1.3rem;
     width:100%;
     height:100%;
     bottom:0.25rem;
     right:0.25rem;
 }
 
+.button-border:active{
+    bottom:0rem;
+    right:0rem;
+}
+
 .button{
-    display:flex;
     height:3.5rem;
     width:13rem;
     background-color: #5BACC3;
-    font-size:1.3rem;
-    padding: 0.75rem 2rem;
-    justify-content: center;
 }
 
 .button-styling{
@@ -150,16 +155,35 @@ justify-content: space-around;
 .slogan-picture-container{
     position:relative;
 }
-.slogan__picture{
+
+.slogan-picture-border-tiltedcan{   
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slogan-picture-border-tiltedcan:hover{
+    animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(359deg);
+    }
+}
+
+.slogan__background{
   width: 25rem;
   height: 25rem;
   background-image: url(../assets/images/coldbrewbackground.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position:center;
-  display: flex;
-  justify-content: center;
-  align-items:center;
 }
 
 .slogan-picture-border{
@@ -169,10 +193,9 @@ justify-content: space-around;
     position: absolute;
     right: 1.75rem;
     bottom: 1.75rem;
-}
-
-.picture__tiltedcan{
-  height: 17.5rem;
+    display: flex;
+    justify-content: center;
+    align-items:center;
 }
 
 .discount{
@@ -182,12 +205,25 @@ justify-content: space-around;
 }
 
 .discount-banner{
-    width: 100%; /* had to go from 50% to 75% to make it look more like the mockup*/
+    width: 100%;
     font-size: 2rem;
-    background: #393939;
     color: white;
+    background: #393939;
     text-align: center;
     padding: 1rem;
+    animation: animate 2.5s ease infinite;
+}
+
+@keyframes animate{
+    0%{
+        background-color:#393939;
+     }
+     50%{
+        background-color:#5BACC3;
+     }
+     100%{
+        background-color:#393939;
+     }
 }
 
 .discount-bold{
