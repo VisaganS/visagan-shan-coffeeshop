@@ -1,0 +1,231 @@
+
+.intro {
+    background-color: #FFF0ED;
+    padding: 4rem 8rem;
+    display:flex;
+    justify-content: space-between;
+}
+
+.intro__text{
+    display:inline-block;
+    vertical-align: top;
+    margin-top: 8rem;
+    width: 50%;
+}
+
+.intro-title{
+    margin-bottom: 1.5rem;
+}
+
+.intro-desc{
+    width:40%;
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.intro__img{
+    display:inline-block;
+ }
+ 
+.button-container{
+    position:relative;
+    display: inline-block;
+}
+
+.button-container--view{
+    position:relative;
+    display: inline-block;
+    margin:4rem 0;
+}
+
+.button-border{
+    position:absolute;
+    border: 2px solid black;
+    width:100%;
+    height:100%;
+    bottom:0.25rem;
+    right:0.25rem;
+}
+
+.button{
+    display:flex;
+    height:3.5rem;
+    width:13rem;
+    background-color: #5BACC3;
+    font-size:1.3rem;
+    padding: 0.75rem 2rem;
+    justify-content: center;
+}
+
+.button-styling{
+    text-decoration: none;
+    color:white;
+}
+
+
+.products{
+    padding: 1rem 0rem;
+    text-align: center;
+    background-color: #F7F7F7;
+}
+
+.products-container{
+display: flex;
+justify-content: space-around;
+}
+
+.products__product{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-top: 1rem;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    border-radius: 0.625rem;
+}
+
+.products__product__img{
+    height: 17.5rem;
+    padding-top:2rem;
+   }
+
+.products h2{
+    text-align: center;
+    padding:2rem 0;
+}
+
+
+.products__desc{
+    background-color: #FFF0ED;
+    display:flex;
+    padding:1rem;
+    justify-content: space-between;
+    border-radius: 0.625rem;
+    height: 100%;
+    width: 100%;
+}
+
+.products-desc-container{
+    display:flex;
+    flex-direction:column;
+    text-align:left;
+}
+
+.desc-price{
+    color: #5BACC3;
+    width: 20%;
+    font-weight:700;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.slogan-banner{
+    display:flex;
+    justify-content:space-between;
+    padding: 4rem;
+}
+
+.slogan__desc{
+    display:flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    justify-content: center;
+}
+
+.desc__text{
+    width:25rem;
+}
+
+.desc__pics{
+ display:flex;
+ width: 25rem;
+ justify-content: space-between;
+}
+
+.desc_picture img{
+    width: 3.1rem;
+}
+
+.slogan-picture-container{
+    position:relative;
+}
+.slogan__picture{
+  width: 25rem;
+  height: 25rem;
+  background-image: url(../assets/images/coldbrewbackground.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.slogan-picture-border{
+    border:0.3125rem solid #5BACC3;
+    width:25rem;
+    height:25rem;
+    position: absolute;
+    right: 1.75rem;
+    bottom: 1.75rem;
+}
+
+.picture__tiltedcan{
+  height: 17.5rem;
+}
+
+.discount{
+    padding: 4rem;
+    text-align:center;
+
+}
+
+.discount-banner{
+    width: 100%; /* had to go from 50% to 75% to make it look more like the mockup*/
+    font-size: 2rem;
+    background: #393939;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.discount-bold{
+    font-size: 2.8rem;
+    font-family: 'Open Sans', 'Bold';
+    font-weight: 700;
+}
+
+.footer-info {
+    background-color: #FFF0ED;
+    display: flex;
+    justify-content: space-between;
+    padding:4rem 7rem;
+    position: relative;
+    overflow:hidden;
+}
+
+.footer__title{
+    padding-bottom:1rem;
+}
+
+.footer__block img{
+    width: 2.6vw;
+}
+
+.footer-design-styling{
+    width:7.5rem;
+}
+.footer__design--left{
+    opacity: 0.25;
+    position:absolute;
+    top: 1rem;
+    left: -2.3rem;
+}
+
+.footer__design--right{
+    opacity: 0.25;
+    position:absolute;
+    bottom: 1rem; /*fix these*/
+    right: -2.3rem;
+}
